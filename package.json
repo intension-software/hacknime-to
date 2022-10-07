@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "netlify-cli": "^12.0.7",
     "@tanstack/react-query": "^4.10.1",
     "@trpc/client": "^10.0.0-proxy-beta.15",
     "@trpc/next": "^10.0.0-proxy-beta.15",

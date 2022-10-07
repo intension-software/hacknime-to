@@ -13,7 +13,9 @@ export default class _Document extends Document {
             href="alarm-clock.png"
             type="image/x-icon"
           />
+          <link rel="apple-touch-icon" href="../public/images/logo.svg"></link>
           <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#317EFB"/>
         </Head>
         <body>
           <Main />
