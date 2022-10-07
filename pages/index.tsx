@@ -2,8 +2,17 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { trpc } from '../utils/trpc'
 
 const Home: NextPage = () => {
+  const hello = trpc.hello.useQuery({
+    text: 'kokfod'
+  })
+
+  if (!hello.data) {
+    return <div>Loading...</div>
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,6 +29,10 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
+        </p>
+
+        <p>
+          {hello.data.greeting}
         </p>
 
         <div className={styles.grid}>
