@@ -6,8 +6,7 @@ export default class _Document extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <title>Sedentarism Alert - PWA</title>
+        <Head title="Sedentarism Alert - PWA">
           <link
             rel="shortcut icon"
             href="alarm-clock.png"
