@@ -1,20 +1,62 @@
 import type { NextPage } from 'next'
 
 import logo from '../public/images/logoWhite.png'
+import learn from '../public/images/Learn.png'
+import season from '../public/images/Season.png'
+import leaderboard from '../public/images/Leaderboard.png'
 import profile from '../public/images/profile.png'
 import Image from 'next/image'
 import Button from '../components/Button'
+import forum from '../public/images/forum.png'
 
 const Dashboard: NextPage = () => {
   return (
     <div>
-      <header className='py-10 px-8 h-4'><div className='flex justify-between'><Image src={logo} alt="logo of InfoMentor" /><Image src={profile} alt="logo of InfoMentor" /></div></header>
-      <body>
-        <div className="bg-[url('../public/images/Learn.png')] bg-no-repeat h-48 w-auto flex content-center mx-8 my-12 pl-4 pb-8 font-extrabold text-black items-end"><h2>Týždenné výzvy</h2><div className="translate-y-12 -translate-x-6"><Button >Poď sa učiť</Button></div></div>
-        <div className="bg-[url('../public/images/Season.png')] bg-no-repeat h-48 w-auto flex content-center mx-8 my-12 pl-4 pb-8 font-extrabold text-black items-end"><h2>Týždenné výzvy</h2><div className="translate-y-12 -translate-x-6"><Button >Poď sa učiť</Button></div></div>
-        <div className="bg-[url('../public/images/Forum.png')] bg-no-repeat h-48 w-auto flex content-center mx-8 my-12 pl-4 pb-8 font-extrabold text-black items-end"><h2>Týždenné výzvy</h2><div className="translate-y-12 -translate-x-6"><Button >Poď sa učiť</Button></div></div>
-        <div className="bg-[url('../public/images/Leaderboard.png')] bg-no-repeat h-48 w-auto flex content-center mx-8 my-12 pl-4 pb-8 font-extrabold text-black items-end"><h2>Týždenné výzvy</h2><div className="translate-y-12 -translate-x-6"><Button >Poď sa učiť</Button></div></div>
-      </body>
+      <header className='py-10 px-8 h-4'>
+        <div className='flex justify-between'>
+          <Image src={logo} alt="logo of InfoMentor" />
+          <Image src={profile} alt="logo of InfoMentor" />
+        </div>
+      </header>
+
+      <div className="flex flex-wrap gap-10 px-8 py-8">
+        <div className="relative">
+          <Image src={learn} alt="learn" />
+          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+            Týždenné výzvy
+          </div>
+          <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
+            <Button>Poď sa učiť</Button>
+          </div>
+        </div>
+        <div className="relative">
+          <Image src={season} alt="seasons" />
+          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+            Sezónne aktivity
+          </div>
+          <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
+            <Button>Zúčastni sa</Button>
+          </div>
+        </div>
+        <div className="relative">
+          <Image src={forum} alt="forum" />
+          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+            Fórum
+          </div>
+          <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
+            <Button>Diskutuj</Button>
+          </div>
+        </div>
+        <div className="relative">
+          <Image src={leaderboard} alt="leaderboard" />
+          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+            Rebríček
+          </div>
+          <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
+            <Button>Porovnaj sa</Button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
