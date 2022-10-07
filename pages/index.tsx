@@ -17,6 +17,7 @@ const Home: NextPage = () => {
       <Link className="text-white" href="/login">Login</Link>
       <Link className="text-white" href="/register">Register</Link>
       <Link className="text-white" href="/dashboard">Dashboard</Link>
+      <Link className="text-white" href="/learn">Learn</Link>
     </div>
   )
 }

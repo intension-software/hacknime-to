@@ -1,13 +1,16 @@
 import type { NextPage } from 'next'
 
-import logo from '../public/images/logoWhite.png'
-import learn from '../public/images/Learn.png'
-import season from '../public/images/Season.png'
-import leaderboard from '../public/images/Leaderboard.png'
-import profile from '../public/images/profile.png'
+import logo from '../public/images/logoWhite.svg'
+import learn from '../public/images/Learn.svg'
+import season from '../public/images/Season.svg'
+import leaderboard from '../public/images/Leaderboard.svg'
+import profile from '../public/images/Profile.svg'
 import Image from 'next/image'
 import Button from '../components/Button'
-import forum from '../public/images/forum.png'
+import forum from '../public/images/forum.svg'
+
+import Link from 'next/link'
+
 
 const Dashboard: NextPage = () => {
   return (
@@ -26,7 +29,11 @@ const Dashboard: NextPage = () => {
             Týždenné výzvy
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
-            <Button>Poď sa učiť</Button>
+            <Link href="/learn" passHref>
+              <a>
+                <Button>Poď sa učiť</Button>
+              </a>
+            </Link>
           </div>
         </div>
         <div className="relative">
