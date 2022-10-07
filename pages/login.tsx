@@ -22,11 +22,11 @@ const Login: NextPage = () => {
           </div>
           <div className="-mt-8 -mb-2 flex flex-col gap-4">
             <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
+              className="rounded-full bg-black py-1.5 px-5 text-white w-fit"
               placeholder="Email"
             />
             <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
+              className="rounded-full bg-black py-1.5 px-5 text-white w-fit"
               placeholder="Heslo"
               type="password"
             />

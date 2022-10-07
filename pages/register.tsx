@@ -22,19 +22,19 @@ const Register: NextPage = () => {
           </div>
           <div className="-mt-8 -mb-2 flex flex-col gap-4">
             <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
+              className="rounded-full bg-black py-1.5 px-5 text-white w-fit"
               placeholder="Meno a priezvisko"
             />
             <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
+              className="rounded-full bg-black py-1.5 px-5 text-white w-fit"
               placeholder="Email"
             />
             <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
+              className="rounded-full bg-black py-1.5 px-5 text-white w-fit"
               placeholder="Heslo"
             />
             <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
+              className="rounded-full bg-black py-1.5 px-5 text-white w-fit"
               placeholder="Zopakujte heslo"
             />
             <label
