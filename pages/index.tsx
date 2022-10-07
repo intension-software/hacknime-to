@@ -5,14 +5,6 @@ import styles from '../styles/Home.module.css'
 import { trpc } from '../utils/trpc'
 
 const Home: NextPage = () => {
-  const hello = trpc.hello.useQuery({
-    text: 'kokfod'
-  })
-
-  if (!hello.data) {
-    return <div>Loading...</div>
-  }
-
   return (
     <div className={styles.container}>
       <Head>
@@ -31,9 +23,7 @@ const Home: NextPage = () => {
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
-        <p>
-          {hello.data.greeting}
-        </p>
+        <a href="/login">Login</a>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
