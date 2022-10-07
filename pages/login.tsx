@@ -4,7 +4,7 @@ import logo from '../public/images/logoVariant2.svg'
 import Button from '../components/Button'
 import Link from 'next/link'
 
-const Register: NextPage = () => {
+const Login: NextPage = () => {
   return (
     <div className="grid h-screen w-screen place-items-center">
       <div className="px-8">
@@ -23,41 +23,22 @@ const Register: NextPage = () => {
           <div className="-mt-8 -mb-2 flex flex-col gap-4">
             <input
               className="rounded-full bg-black py-1.5 px-5 text-white"
-              placeholder="Meno a priezvisko"
-            />
-            <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
               placeholder="Email"
             />
             <input
               className="rounded-full bg-black py-1.5 px-5 text-white"
               placeholder="Heslo"
+              type="password"
             />
-            <input
-              className="rounded-full bg-black py-1.5 px-5 text-white"
-              placeholder="Zopakujte heslo"
-            />
-            <label
-              htmlFor="gdpr"
-              className="italic"
-            >
-              <input
-                type="checkbox"
-                id="gdpr"
-                className="hidden"
-              />
-              <span className="bg-black rounded-full w-6 h-6 inline-block mr-2"></span>
-              Súhlasím so <span className="underline">spracovaním osobných údajov</span>
-            </label>
           </div>
-          <div className="justify-center flex translate-y-1/2"><Button>Registrovať sa</Button></div>
+          <div className="justify-center flex translate-y-1/2"><Button>Prihlásiť sa</Button></div>
         </div>
         <div className="text-white pt-8">
-          Máte účet? <Link href="/login" className="underline">Prihláste sa</Link>
+          Nemáte účet? <Link href="/register" className="underline">Zaregistrujte sa</Link>
         </div>
       </div>
     </div>
   )
 }
 
-export default Register
+export default Login

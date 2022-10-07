@@ -1,18 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { trpc } from '../utils/trpc'
 
 const Home: NextPage = () => {
-  const hello = trpc.hello.useQuery({
-    text: 'kokfod'
-  })
-
-  if (!hello.data) {
-    return <div>Loading...</div>
-  }
-
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +16,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <Link href="https://nextjs.org">Next.js!</Link>
         </h1>
 
         <p className={styles.description}>
@@ -31,9 +24,7 @@ const Home: NextPage = () => {
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
-        <p>
-          {hello.data.greeting}
-        </p>
+        <Link href="/login">Login</Link>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
