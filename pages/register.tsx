@@ -52,7 +52,7 @@ const Register: NextPage = () => {
           <div className="justify-center flex translate-y-1/2"><Button>Registrovať sa</Button></div>
         </div>
         <div className="text-white pt-8">
-          Máte účet? <a href="/login" className="underline">Prihláste sa</a>
+          Máte účet? <Link href="/login" className="underline">Prihláste sa</Link>
         </div>
       </div>
     </div>

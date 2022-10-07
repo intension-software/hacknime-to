@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import logo from '../public/images/logoVariant2.svg'
 import Button from '../components/Button'
+import Link from 'next/link'
 
 const Login: NextPage = () => {
   return (
@@ -33,7 +34,7 @@ const Login: NextPage = () => {
           <div className="justify-center flex translate-y-1/2"><Button>Prihlásiť sa</Button></div>
         </div>
         <div className="text-white pt-8">
-          Nemáte účet? <a href="/register" className="underline">Zaregistrujte sa</a>
+          Nemáte účet? <Link href="/register" className="underline">Zaregistrujte sa</Link>
         </div>
       </div>
     </div>
