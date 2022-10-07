@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @tailwind base;
@@ -19,6 +20,7 @@ a {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -26,4 +28,10 @@ a {
   body {
     background: black;
   }
+=======
+body {
+  background-color: #070B19;
+  font-weight: 600;
+  font-size: 20px;
+>>>>>>> e20faa32c07a5fdb1bcdb3d56c9d42aa57eda2e7
 }
