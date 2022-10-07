@@ -8,7 +8,7 @@ const Register: NextPage = () => {
   return (
     <div className="grid h-screen w-screen place-items-center">
       <div>
-        <div className="bg-white rounded-3xl w-min h-fit flex flex-col px-8">
+        <div className="bg-white rounded-3xl w-min h-fit flex flex-col px-8 mx-8">
           <div className="mx-auto -translate-y-1/2">
             <div
               className="border-4 border-black rounded-full"
@@ -52,7 +52,7 @@ const Register: NextPage = () => {
           </div>
           <div className="justify-center flex translate-y-1/2"><Button>Registrovať sa</Button></div>
         </div>
-        <div className="text-white pt-8">
+        <div className="text-white pt-8 mx-8">
           Máte účet? <Link href="/login" className="underline">Prihláste sa</Link>
         </div>
       </div>
