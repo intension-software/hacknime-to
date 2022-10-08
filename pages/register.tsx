@@ -3,10 +3,13 @@ import Image from 'next/image'
 import logo from '../public/images/logoVariant2.svg'
 import Button from '../components/Button'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { trpc } from '../utils/trpc'
+import { useRouter } from 'next/router'
 
 const Register: NextPage = () => {
+  const router = useRouter()
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [password2, setPassword2] = useState('')
@@ -22,6 +25,12 @@ const Register: NextPage = () => {
       name
     })
   }
+
+    useEffect(() => {
+      if (mutation.data && mutation.data.email) {
+        router.push('/dashboard')
+      }
+    }, [router, mutation.data])
 
   return (
     <div className="grid h-screen w-screen place-items-center">

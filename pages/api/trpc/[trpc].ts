@@ -40,7 +40,7 @@ export const appRouter = t.router({
       email: z.string(),
       password: z.string()
     }))
-    .query((req) => {
+    .mutation((req) => {
       const { email, password } = req.input
       const user = users.find(user => user.email === email && user.password === password)
       return user
