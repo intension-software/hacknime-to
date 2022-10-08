@@ -5,6 +5,8 @@ import logo from '../public/images/logoVariant4.svg'
 import profile from '../public/images/Profile.svg'
 import Question from '../components/Question'
 
+import { useRouter } from 'next/router'
+
 const data: {
     headline: string
     text: string
@@ -129,6 +131,8 @@ const data: {
 ]
 
 const Learn: NextPage = () => {
+  const router = useRouter();
+
   const [index, setIndex] = useState(0)
 
   const [answers, setAnswers] = useState<("white" | "green" | "red")[]>(["white", "white", "white", "white","white","white", "white", "white", "white","white"])
@@ -139,9 +143,13 @@ const Learn: NextPage = () => {
     <div>
       <header className='pb-12 pt-4 px-8 h-4 bg-white'>
         <div className='flex justify-between items-center'>
-          <Image src={logo} alt="logo of InfoMentor" />
+          <Image src={logo} alt="logo of InfoMentor" onClick={() => {
+            router.push('/dashboard')
+          }} />
           <div className='text-red font-bold font-[20px]'>TÝŽDENNÉ VÝZVY</div>
-          <Image src={profile} alt="logo of InfoMentor" />
+          <Image src={profile} alt="logo of InfoMentor" onClick={() => {
+            router.push('/profile')
+          }} />
         </div>
       </header>
       <div>

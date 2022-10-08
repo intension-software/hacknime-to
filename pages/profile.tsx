@@ -3,12 +3,17 @@ import Image from 'next/image'
 import logo from '../public/images/logoVariant4.svg'
 import profile from '../public/images/ProfileBig.svg'
 
+import { useRouter } from 'next/router'
+
 
 const Profile: NextPage = () => {
+  const router = useRouter();
   return (
     <div className="w-screen h-screen">
       <div className='flex justify-between items-center pb-12 pt-4 px-8'>
-        <Image src={logo} alt="logo of InfoMentor" />
+        <Image src={logo} alt="logo of InfoMentor" onClick={() => {
+            router.push('/dashboard')
+          }}/>
         <div className='text-red font-bold font-[20px]'>TÝŽDENNÉ VÝZVY</div>
         <div className='h-9 w-9'></div>
       </div>
