@@ -116,15 +116,35 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
       <div>
       <div className='bg-white rounded-b-3xl p-4'>
           <div className='text-red normal-bold text-2xl'>Dokončili ste test {tests != 10 ? ', chcete pokračovať na ďaľší tématicky celok  Kriticke myslenie?' : ''}</div>
-          <div className='text-red extra-bold flex justify-center pt-10'>{counter} / {tests}</div>
       </div>
+      <div className='flex justify-between items-center px-24 pt-4'>
+          { index <= 5 ?
+          <>
+            <Sphere answer={answers[0]} active={index == 0}/>
+            <Sphere answer={answers[1]} active={index == 1}/>
+            <Sphere answer={answers[2]} active={index == 2}/>
+            <Sphere answer={answers[3]} active={index == 3}/>
+            <Sphere answer={answers[4]} active={index == 4}/>
+          </>
+            : 
+            <>
+              <Sphere answer={answers[5]} active={ index == 5}/>
+              <Sphere answer={answers[6]} active={ index == 6}/>
+              <Sphere answer={answers[7]} active={ index == 7}/>
+              <Sphere answer={answers[8]} active={ index == 8}/>
+              <Sphere answer={answers[9]} active={ index == 9}/>
+            </>
+        }
+        </div>
+        <div className='text-white extra-large flex justify-center pt-5'>{counter} / {tests}</div>
+        <div className='text-white extra-large flex justify-center pt-2'>skóre</div>
       <div className='fixed flex justify-between bottom-2 px-4 w-screen'>
         <Link href="/dashboard" passHref>
           <Button>Dokončiť</Button>
         </Link>
         {tests != 10 ? 
           <Button onClick={() => nextTest()}>
-            Ďaľší test
+            Pokračovať
           </Button> : <></> 
         }
       </div>

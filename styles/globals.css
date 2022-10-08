@@ -39,6 +39,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.extra-large {
+  font-weight: 900;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .normal-bold {
   font-weight: 700;
   font-size: 25px;
