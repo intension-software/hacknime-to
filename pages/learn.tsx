@@ -6,7 +6,16 @@ import Button from '../components/Button'
 import profile from '../public/images/Profile.svg'
 import Question from '../components/Question'
 
-const data = [
+const data: {
+    text: string
+    firstOption: string
+    firstHeadline: string
+    secondOption: string
+    secondHeadline: string
+    thirdOption: string
+    thirdHeadline: string
+    correctAnswers: ('green' | 'red')[]
+}[] = [
   {
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“Slovensko má na dosah piatu automobilku.”',  

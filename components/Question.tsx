@@ -23,7 +23,7 @@ interface QuestionProps {
   }[]
 }
 
-const Question: NextPage = ({setAnswers, answers, index, setIndex, data}: QuestionProps) => {
+const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex, data}) => {
 
   const handleAnswer = (answer: 'red' | 'green', index: number, num: number) => {
     if (!click) {
