@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap');
 
 html,
 body {
@@ -24,4 +24,8 @@ body {
   background-color: #070B19;
   font-weight: 500;
   font-size: 20px;
+}
+
+.special-font {
+  font-family: 'Montserrat Alternates', sans-serif;
 }
