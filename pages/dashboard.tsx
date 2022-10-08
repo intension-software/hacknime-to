@@ -30,7 +30,7 @@ const Dashboard: NextPage = () => {
       <div className="flex flex-wrap gap-10 px-8 py-8">
         <div className="relative">
           <Image src={learn} alt="learn" />
-          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+          <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
             Týždenné výzvy
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
@@ -42,7 +42,7 @@ const Dashboard: NextPage = () => {
         <div className='text-green'></div>
         <div className="relative">
           <Image src={season} alt="seasons" />
-          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+          <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
             Sezónne aktivity
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
@@ -51,7 +51,7 @@ const Dashboard: NextPage = () => {
         </div>
         <div className="relative">
           <Image src={forum} alt="forum" />
-          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+          <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
             Fórum
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
@@ -60,7 +60,7 @@ const Dashboard: NextPage = () => {
         </div>
         <div className="relative">
           <Image src={leaderboard} alt="leaderboard" />
-          <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">
+          <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
             Rebríček
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
