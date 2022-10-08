@@ -42,7 +42,7 @@ const Dashboard: NextPage = () => {
         <div className="relative">
           <Image src={season} alt="seasons" />
           <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
-            Sezónne aktivity
+            Precestuj aktualitami
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
             <Button>Zúčastni sa</Button>
