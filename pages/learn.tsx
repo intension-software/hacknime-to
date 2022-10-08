@@ -7,6 +7,7 @@ import profile from '../public/images/Profile.svg'
 import Question from '../components/Question'
 
 const data: {
+    headline: string
     text: string
     firstOption: string
     firstHeadline: string
@@ -17,6 +18,7 @@ const data: {
     correctAnswers: ('green' | 'red')[]
 }[] = [
   {
+    headline: '1. Nová automobilka',
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“Slovensko má na dosah piatu automobilku.”',  
     firstHeadline: '- titulok článku',
@@ -27,6 +29,7 @@ const data: {
     correctAnswers: ['red', 'red', 'green']
   },
   {
+    headline: '2. Nová automobilka',
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“a”',
     firstHeadline: '- titulok článku', 
@@ -37,6 +40,7 @@ const data: {
     correctAnswers: ['red', 'green', 'red']
   },
   {
+    headline: '3. Nová automobilka',
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“Slovensko má na dosah piatu automobilku.”',
     firstHeadline: '- titulok článku',
@@ -47,6 +51,7 @@ const data: {
     correctAnswers: ['red', 'red', 'green']
   },
   {
+    headline: '4. Nová automobilka',
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“a”',
     firstHeadline: '- titulok článku', 
@@ -57,6 +62,7 @@ const data: {
     correctAnswers: ['red', 'green', 'red']
   },
   {
+    headline: '5. Nová automobilka',
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“Slovensko má na dosah piatu automobilku.”',
     firstHeadline: '- titulok článku',

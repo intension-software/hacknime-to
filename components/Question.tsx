@@ -12,6 +12,7 @@ interface QuestionProps {
   index: number
   setIndex: Dispatch<SetStateAction<number>>
   data: {
+    headline: string
     text: string
     firstOption: string
     firstHeadline: string
@@ -51,8 +52,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
       { index < 5 ? 
         <div>
           <div className='text-red mx-8 extra-bold'>
-            <div>1. Nová </div>
-            <div className='pl-7'>Automobilka </div>
+            <div>{data[index].headline} </div>
           </div>
           <div className='text-justify text-black font-bold mx-8 my-2 text-sm italic text-opacity-70'>
             {data[index].text}
