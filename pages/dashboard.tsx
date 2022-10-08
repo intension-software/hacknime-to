@@ -7,7 +7,7 @@ import leaderboard from '../public/images/Leaderboard.svg'
 import profile from '../public/images/Profile.svg'
 import Image from 'next/image'
 import Button from '../components/Button'
-import forum from '../public/images/forum.svg'
+import forum from '../public/images/Forum.svg'
 
 import Link from 'next/link'
 
