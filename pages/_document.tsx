@@ -19,6 +19,8 @@ export default class _Document extends Document {
         <body>
           <Main />
           <NextScript />
+
+          <div className="hidden ring-green text-green bg-green"></div>
         </body>
       </Html>
     );
