@@ -46,16 +46,9 @@ const Dashboard: NextPage = () => {
             Sezónne aktivity
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
-            <Button>Zúčastni sa</Button>
-          </div>
-        </div>
-        <div className="relative">
-          <Image src={forum} alt="forum" />
-          <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
-            Fórum
-          </div>
-          <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
-            <Button>Diskutuj</Button>
+            <Link href="/seasons" passHref>
+              <Button>Zúčastni sa</Button>
+            </Link>
           </div>
         </div>
         <div className="relative">
@@ -65,6 +58,15 @@ const Dashboard: NextPage = () => {
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
             <Button>Porovnaj sa</Button>
+          </div>
+        </div>
+        <div className="relative">
+          <Image src={forum} alt="forum" />
+          <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
+            Fórum
+          </div>
+          <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
+            <Button>Diskutuj</Button>
           </div>
         </div>
       </div>
