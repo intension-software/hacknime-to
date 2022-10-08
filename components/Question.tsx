@@ -78,11 +78,23 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
           </div>
           <div className=''>
             <div className='flex justify-between items-center px-24 pt-4'>
-              <Sphere answer={answers[0]} active={index == 0}/>
-              <Sphere answer={answers[1]} active={index == 1}/>
-              <Sphere answer={answers[2]} active={index == 2}/>
-              <Sphere answer={answers[3]} active={index == 3}/>
-              <Sphere answer={answers[4]} active={index == 4}/>
+              { index < 5 ?
+              <>
+                <Sphere answer={answers[0]} active={index == 0}/>
+                <Sphere answer={answers[1]} active={index == 1}/>
+                <Sphere answer={answers[2]} active={index == 2}/>
+                <Sphere answer={answers[3]} active={index == 3}/>
+                <Sphere answer={answers[4]} active={index == 4}/>
+              </>
+                : 
+                <>
+                  <Sphere answer={answers[5]} active={ index == 6}/>
+                  <Sphere answer={answers[6]} active={ index == 7}/>
+                  <Sphere answer={answers[7]} active={ index == 8}/>
+                  <Sphere answer={answers[8]} active={ index == 9}/>
+                  <Sphere answer={answers[9]} active={ index == 10}/>
+                </>
+            }
             </div>
           </div>
           <div className='mx-8 mb-8 mt-6'>
