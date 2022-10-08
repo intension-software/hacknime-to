@@ -10,36 +10,51 @@ const data = [
   {
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
     firstOption: '“Slovensko má na dosah piatu automobilku.”',  
+    firstHeadline: '- titulok článku',
     secondOption: '“Pri Zvolene sa začnú vyrábať slávne športiaky Maserati.”',
+    secondHeadline: '- titulok článku',
     thirdOption: '“Výkonný riaditeľ z Maserati: Slovensko má veľký potenciál.”',
+    thirdHeadline: '- titulok článku',
     correctAnswers: ['red', 'red', 'green']
   },
   {
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
-    firstOption: '“a”',  
+    firstOption: '“a”',
+    firstHeadline: '- titulok článku', 
     secondOption: 'b”',
+    secondHeadline: '- titulok článku',
     thirdOption: 'c”',
+    thirdHeadline: '- titulok článku',
     correctAnswers: ['red', 'green', 'red']
   },
   {
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
-    firstOption: '“Slovensko má na dosah piatu automobilku.”',  
+    firstOption: '“Slovensko má na dosah piatu automobilku.”',
+    firstHeadline: '- titulok článku',
     secondOption: '“Pri Zvolene sa začnú vyrábať slávne športiaky Maserati.”',
+    secondHeadline: '- titulok článku',
     thirdOption: '“Výkonný riaditeľ z Maserati: Slovensko má veľký potenciál.”',
+    thirdHeadline: '- titulok článku',
     correctAnswers: ['red', 'red', 'green']
   },
   {
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
-    firstOption: '“a”',  
+    firstOption: '“a”',
+    firstHeadline: '- titulok článku', 
     secondOption: 'b”',
+    secondHeadline: '- titulok článku',
     thirdOption: 'c”',
+    thirdHeadline: '- titulok článku',
     correctAnswers: ['red', 'green', 'red']
   },
   {
     text: 'Blízko Zvolena by už čoskoro mohla stáť nová fabrika, v ktorej by vyrábali luxusné športové vozy Maserati. Oznámil to minister hospodárstva po stretnutí s výkonným riaditeľom automobilky Emersonom Fitipaldim. „Som nadšený, na Slovensko smeruje piata automobilka,“ povedal minister. Dobrý pocit mal zo stretnutia aj Fitipaldi, ktorý ministrove slová komentoval diplomaticky. „Slovensko sa nám páči, má veľký potenciál,“ povedal Fitipaldi.',
-    firstOption: '“Slovensko má na dosah piatu automobilku.”',  
+    firstOption: '“Slovensko má na dosah piatu automobilku.”',
+    firstHeadline: '- titulok článku',
     secondOption: '“Pri Zvolene sa začnú vyrábať slávne športiaky Maserati.”',
+    secondHeadline: '- titulok článku',
     thirdOption: '“Výkonný riaditeľ z Maserati: Slovensko má veľký potenciál.”',
+    thirdHeadline: '- titulok článku',
     correctAnswers: ['red', 'red', 'green']
   },
 ]

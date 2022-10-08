@@ -14,8 +14,11 @@ interface QuestionProps {
   data: {
     text: string
     firstOption: string
+    firstHeadline: string
     secondOption: string
+    secondHeadline: string
     thirdOption: string
+    thirdHeadline: string
     correctAnswers: ('green' | 'red')[]
   }[]
 }
@@ -64,15 +67,15 @@ const Question: NextPage = ({setAnswers, answers, index, setIndex, data}: Questi
             </div>
           <div className='m-8'>
             <div className={`text-${questions[0]} special-font text-[20px]`} onClick={() => handleAnswer(data[index].correctAnswers[0], index, 0)}>{data[index].firstOption}</div>
-            <div className='text-white text-opacity-50 text-xs mx-8'>- titulok článku</div>
+            <div className='text-white text-opacity-50 text-xs mx-8'>{data[index].firstHeadline}</div>
           </div>
           <div className='m-8  text-end'>
             <div className={`text-${questions[1]} special-font text-[20px]`} onClick={() => handleAnswer(data[index].correctAnswers[1], index, 1)}>{data[index].secondOption}</div>
-            <div className='text-white text-opacity-50 text-xs mx-8'>- titulok článku</div>
+            <div className='text-white text-opacity-50 text-xs mx-8'>{data[index].secondHeadline}</div>
           </div>
           <div className='m-8'>
             <div className={`text-${questions[2]} special-font text-[20px]`} onClick={() => handleAnswer(data[index].correctAnswers[2], index, 2)}>{data[index].thirdOption}</div>
-            <div className='text-white text-opacity-50 text-xs mx-8'>- titulok článku</div>
+            <div className='text-white text-opacity-50 text-xs mx-8'>{data[index].thirdHeadline}</div>
           </div>
           <div className='absolute bottom-5 right-5'>
             <Button onClick={() => next()}>Ďalej</Button>
