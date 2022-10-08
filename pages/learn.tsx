@@ -82,8 +82,8 @@ const Learn: NextPage = () => {
   const correctAnswers: ("green" | "red")[] = ["red", "red", "green"]
 
   return (
-    <div className='bg-white'>
-      <header className='py-10 px-8 h-4'>
+    <div>
+      <header className='py-10 px-8 h-4 bg-white'>
         <div className='flex justify-between items-center'>
           <Image src={logo} alt="logo of InfoMentor" />
           <div className='text-red font-bold font-[20px]'>TÝŽDENNÉ VÝZVY</div>

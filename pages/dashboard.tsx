@@ -35,9 +35,7 @@ const Dashboard: NextPage = () => {
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
             <Link href="/learn" passHref>
-              <a>
-                <Button>Poď sa učiť</Button>
-              </a>
+              <Button>Poď sa učiť</Button>
             </Link>
           </div>
         </div>
