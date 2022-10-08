@@ -30,7 +30,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
   const handleAnswer = (answer: 'red' | 'green', index: number, num: number) => {
     if (!click) {
       setAnswers(answers.map((a, i) => i === index ? answer : a))
-      setQuestions(questions.map((a, i) => i === num ? answer : a))
+      setQuestions(questions.map((a: string, i: number) => i === num ? answer : a && 'green' === data[index].correctAnswers[i] ? 'green' : a))
       setClick(true)
     }
   }
@@ -38,7 +38,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
   const next = () => {
     if (click) {
       setIndex(index + 1)
-      setQuestions(questions.map((a) => a = 'white'))
+      setQuestions(questions.map((a: string) => a = 'white'))
       setClick(false)
       }
   }
