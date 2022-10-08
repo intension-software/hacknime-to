@@ -78,7 +78,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
           <div className={`text-${questions[2]} special-font text-[20px]`} onClick={() => handleAnswer(data[index].correctAnswers[2], index, 2)}>{data[index].thirdOption}</div>
           <div className='text-white text-opacity-50 text-xs mx-8'>{data[index].thirdHeadline}</div>
         </div>
-        <div className='absolute bottom-5 right-5'>
+        <div className='fixed bottom-5 right-5'>
           { index != 4 ? <Button onClick={() => next()}>Ďalej</Button> : <Link href="/dashboard" passHref><Button>Dokončiť</Button></Link>}
         </div>
       </div>

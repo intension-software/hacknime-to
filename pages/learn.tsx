@@ -83,7 +83,7 @@ const Learn: NextPage = () => {
 
   return (
     <div>
-      <header className='py-10 px-8 h-4 bg-white'>
+      <header className='pb-12 pt-4 px-8 h-4 bg-white'>
         <div className='flex justify-between items-center'>
           <Image src={logo} alt="logo of InfoMentor" />
           <div className='text-red font-bold font-[20px]'>TÝŽDENNÉ VÝZVY</div>
