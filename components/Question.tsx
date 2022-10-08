@@ -103,7 +103,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
       </div> : 
       <div>
       <div className='bg-white rounded-b-3xl p-4'>
-          <div className='text-red normal-bold text-2xl'>Dokončili ste test {tests != 10 ? ', chcete pokračovať na ďaľšiu tému?' : ''}</div>
+          <div className='text-red normal-bold text-2xl'>Dokončili ste test {tests != 10 ? ', chcete pokračovať na ďaľší tématicky celok  Kriticke myslenie?' : ''}</div>
           <div className='text-red extra-bold flex justify-center pt-10'>{counter} / {tests}</div>
       </div>
       <div className='fixed flex justify-between bottom-2 px-4 w-screen'>
