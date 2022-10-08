@@ -74,7 +74,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
           <div className={`text-${questions[1]} special-font text-[20px]`} onClick={() => handleAnswer(data[index].correctAnswers[1], index, 1)}>{data[index].secondOption}</div>
           <div className='text-white text-opacity-50 text-xs mx-8'>{data[index].secondHeadline}</div>
         </div>
-        <div className='m-8'>
+        <div className='m-8 mb-16'>
           <div className={`text-${questions[2]} special-font text-[20px]`} onClick={() => handleAnswer(data[index].correctAnswers[2], index, 2)}>{data[index].thirdOption}</div>
           <div className='text-white text-opacity-50 text-xs mx-8'>{data[index].thirdHeadline}</div>
         </div>

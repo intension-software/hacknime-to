@@ -1,12 +1,12 @@
 {
-    "theme_color": "#ffffff",
-    "background_color": "#000000",
+    "theme_color": "#FFF8E7",
+    "background_color": "#070B19",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
+    "name": "PWA infomentor",
+    "short_name": "infomentor",
     "description": "App for students to be resistant against disinformation",
-    "name": "PWA InfoMentor",
-    "short_name": "InfoMentor",
     "icons": [
         {
             "src": "/icon-192x192.png",

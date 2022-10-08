@@ -26,6 +26,7 @@ body {
   background-color: #070B19;
   font-weight: 500;
   font-size: 20px;
+  user-select: none;
 }
 
 .special-font {
