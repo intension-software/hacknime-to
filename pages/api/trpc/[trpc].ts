@@ -4,20 +4,47 @@ import { z } from 'zod'
 
 export const t = initTRPC.create()
 
+interface User {
+  name: string
+  email: string
+  password: string
+}
+
+const users: User[] = [
+  {
+    name: 'John Doe',
+    email: 'johndoe@gmail.com',
+    password: '123456'
+  }
+]
+
 export const appRouter = t.router({
-  hello: t.procedure
-    .input(
-      z
-        .object({
-          text: z.string().nullish(),
-        })
-        .nullish(),
-    )
-    .query(({ input }) => {
-      return {
-        greeting: `hello ${input?.text ?? 'world'}`,
+  userCreate: t.procedure
+    .input(z.object({
+      name: z.string(),
+      email: z.string(),
+      password: z.string()
+    }))
+    .mutation((req) => {
+      const { name, email, password } = req.input
+      const user = {
+        name,
+        email,
+        password
       }
+      users.push(user)
+      return user
     }),
+  userLogin: t.procedure
+    .input(z.object({
+      email: z.string(),
+      password: z.string()
+    }))
+    .mutation((req) => {
+      const { email, password } = req.input
+      const user = users.find(user => user.email === email && user.password === password)
+      return user
+    })
 })
 
 // export type definition of API

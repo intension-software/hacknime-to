@@ -10,15 +10,20 @@ import Button from '../components/Button'
 import forum from '../public/images/Forum.svg'
 
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 
 const Dashboard: NextPage = () => {
+  const router = useRouter()
+
   return (
     <div>
       <header className='py-10 px-8 h-4'>
         <div className='flex justify-between'>
           <Image src={logo} alt="logo of InfoMentor" />
-          <Image src={profile} alt="logo of InfoMentor" />
+          <Image src={profile} alt="logo of InfoMentor" onClick={() => {
+            router.push('/login')
+          }} />
         </div>
       </header>
 
