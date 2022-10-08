@@ -1,10 +1,13 @@
 interface SphereProps {
   answer: 'green' | 'red' | 'white'
+  active: boolean
 }
 
-function Sphere ({ answer }: SphereProps) {
+function Sphere ({ answer, active }: SphereProps) {
   return (
-    <div className="rounded-full w-3 h-3 bg-`${answer}`"></div>
+    <>
+      {active ? <div className={`rounded-full w-4 h-4 bg-${answer} ring-4 ring-${answer} ring-opacity-50`}></div> : <div className={`rounded-full w-4 h-4 bg-${answer}`}></div>}
+    </>
   )
 }
 
