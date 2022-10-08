@@ -39,6 +39,7 @@ const Dashboard: NextPage = () => {
             </Link>
           </div>
         </div>
+        <div className='text-green'></div>
         <div className="relative">
           <Image src={season} alt="seasons" />
           <div className="absolute bottom-0 left-0 w-full pl-8 pb-10 text-black">

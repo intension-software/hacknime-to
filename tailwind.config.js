@@ -9,7 +9,7 @@ module.exports = {
       "white": "#FFF8E7",
       "black": "#070B19",
       "red": "#D63744",
-      "green": "#6AD637"
+      "green": "#6AD637",
     }
   },
   plugins: [],
