@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { useState } from 'react'
 import Image from 'next/image'
 import logo from '../public/images/logoVariant4.svg'
-import Button from '../components/Button'
 import profile from '../public/images/Profile.svg'
 import Question from '../components/Question'
 
@@ -62,7 +61,7 @@ const data: {
     correctAnswers: ['red', 'green', 'red']
   },
   {
-    headline: '5. Slovenskí vojaci pod nemcami',
+    headline: '5. Slovenskí vojaci pod Nemcami',
     text: 'Ministri obrany Slovenska a Nemecka podpísali dohodu o spolupráci. Na základe nej odídu príslušníci slovenských mechanizovaných jednotiek do Nemecka na dvojmesačný výcvik pod dohľadom nemeckých inštruktorov. Minister Marek Pancier si od toho sľubuje väčšie skúsenosti pre slovenských vojakov, ako aj prehĺbenie ich jazykových znalostí.',
     firstOption: '“Slovenskí vojaci budú trénovať pod taktovkou Nemcov ”',
     firstHeadline: '- titulok článku',

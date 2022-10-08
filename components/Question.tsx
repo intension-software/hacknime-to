@@ -115,7 +115,7 @@ const Question: NextPage<QuestionProps> = ({setAnswers, answers, index, setIndex
       </div> : 
       <div>
       <div className='bg-white rounded-b-3xl p-4'>
-          <div className='text-red normal-bold text-2xl'>Dokončili ste test {tests != 10 ? ', chcete pokračovať na ďaľší tématicky celok  Kriticke myslenie?' : ''}</div>
+          <div className='text-red normal-bold text-2xl'>Dokončili ste test {tests != 10 ? ', chcete pokračovať na ďalší tématicky celok „Kritické myslenie?“' : ''}</div>
       </div>
       <div className='flex justify-between items-center px-24 pt-4'>
           { index <= 5 ?

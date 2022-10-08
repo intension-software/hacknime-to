@@ -22,7 +22,7 @@ const Dashboard: NextPage = () => {
         <div className='flex justify-between'>
           <Image src={logo} alt="logo of InfoMentor" />
           <Image src={profile} alt="logo of InfoMentor" onClick={() => {
-            router.push('/login')
+            router.push('/profile')
           }} />
         </div>
       </header>
@@ -45,9 +45,7 @@ const Dashboard: NextPage = () => {
             Sezónne aktivity
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
-            <Link href="/seasons" passHref>
-              <Button>Zúčastni sa</Button>
-            </Link>
+            <Button>Zúčastni sa</Button>
           </div>
         </div>
         <div className="relative">
@@ -62,7 +60,7 @@ const Dashboard: NextPage = () => {
         <div className="relative">
           <Image src={forum} alt="forum" />
           <div className="absolute bottom-0 left-0 w-full pl-6 pb-10 text-black normal-bold">
-            Fórum
+            Triedne fórum
           </div>
           <div className="absolute bottom-2 right-0 mr-8 translate-y-1/2">
             <Button>Diskutuj</Button>
