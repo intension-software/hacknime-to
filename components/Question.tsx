@@ -50,15 +50,15 @@ const Question: NextPage = ({setAnswers, answers, index, setIndex, data}: Questi
     <div>
       { index < 5 ? 
         <div>
-          <div className='text-red mx-8 font-[32px] font-black'>
+          <div className='text-red mx-8 extra-bold'>
             <div>1. Nová </div>
-            <div>Automobilka </div>
+            <div className='pl-7'>Automobilka </div>
           </div>
           <div className='text-justify text-black font-bold mx-8 my-2 text-sm italic text-opacity-70'>
             {data[index].text}
           </div>
           <div className='bg-black pt-2 rounded-t-3xl'>
-            <div className='flex justify-between items-center px-8 pt-4'>
+            <div className='flex justify-between items-center px-24 pt-4'>
               <Sphere answer={answers[0]} active={index == 0}/>
               <Sphere answer={answers[1]} active={index == 1}/>
               <Sphere answer={answers[2]} active={index == 2}/>

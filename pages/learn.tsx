@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import Image from 'next/image'
-import logo from '../public/images/logoVariant3.svg'
+import logo from '../public/images/logoVariant4.svg'
 import Button from '../components/Button'
 import profile from '../public/images/Profile.svg'
 import Question from '../components/Question'
@@ -71,7 +71,7 @@ const Learn: NextPage = () => {
       <header className='py-10 px-8 h-4'>
         <div className='flex justify-between items-center'>
           <Image src={logo} alt="logo of InfoMentor" />
-          <div className='text-red mx-8'>Týždenné výzvy</div>
+          <div className='text-red font-bold font-[20px]'>TÝŽDENNÉ VÝZVY</div>
           <Image src={profile} alt="logo of InfoMentor" />
         </div>
       </header>
